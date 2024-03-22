@@ -16,6 +16,7 @@ namespace ToDoApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //TODO
             Application.Run(new Form1());
         }
     }
