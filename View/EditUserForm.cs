@@ -45,7 +45,7 @@ namespace ToDoApp.View
           
             userController.UpdateUser(userId, username, password, firstName, lastName);
 
-            MessageBox.Show("User updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("User is updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
            
             this.DialogResult = DialogResult.OK;

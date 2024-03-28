@@ -38,7 +38,7 @@ namespace ToDoApp.View
         
             userController.CreateUser(username, password, firstName, lastName);
 
-            MessageBox.Show("User created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("User is created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             this.DialogResult = DialogResult.OK;
             this.Close();
