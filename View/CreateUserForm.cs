@@ -28,19 +28,18 @@ namespace ToDoApp.View
 
         private void saves_Click(object sender, EventArgs e)
         {
-            // Get user input from the form
+            
             string username = textBox1.Text;
-            // Get other input fields as needed
+           
             string password = textBox2.Text;
             string firstName = textBox3.Text;
             string lastName = textBox4.Text;
 
-            // Create the user
+        
             userController.CreateUser(username, password, firstName, lastName);
 
             MessageBox.Show("User created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            // Close the form with OK result
             this.DialogResult = DialogResult.OK;
             this.Close();
 

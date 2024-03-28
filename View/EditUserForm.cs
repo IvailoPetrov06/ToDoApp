@@ -35,19 +35,19 @@ namespace ToDoApp.View
 
         private void save_Click(object sender, EventArgs e)
         {
-            // Get user input from the form
+            
             string username = textBox1.Text;
-            // Get other input fields as needed
+         
             string password = textBox2.Text;
             string firstName = textBox3.Text;
             string lastName = textBox4.Text;
 
-            // Update the user
+          
             userController.UpdateUser(userId, username, password, firstName, lastName);
 
             MessageBox.Show("User updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            // Close the form with OK result
+           
             this.DialogResult = DialogResult.OK;
             this.Close();
 
@@ -58,7 +58,7 @@ namespace ToDoApp.View
             if (user != null)
             {
                 textBox1.Text = user.Username;
-                // Set other fields as needed
+               
             }
             else
             {

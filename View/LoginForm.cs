@@ -51,7 +51,7 @@ namespace ToDoApp
                     MessageBox.Show("You don't have permission to access this view.");
                 }
 
-                this.Hide(); // Hide the login form
+                this.Hide();
             }
             else
             {
