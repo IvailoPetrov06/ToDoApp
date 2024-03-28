@@ -8,6 +8,7 @@ namespace ToDoApp
 {
     internal static class Program
     {
+        /// Ivailo ako chetesh tova znachi rabotish po proekta... BRAVO
         /// <summary>
         /// The main entry point for the application.
         /// 
@@ -17,6 +18,7 @@ namespace ToDoApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //TODO
             Application.Run(new Form1());
         }
     }
