@@ -29,11 +29,14 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CreateUser = new System.Windows.Forms.Button();
             this.EditUser = new System.Windows.Forms.Button();
             this.DeleteUser = new System.Windows.Forms.Button();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.First_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Last_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,42 +45,15 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
-            this.Username});
+            this.Username,
+            this.Password,
+            this.First_Name,
+            this.Last_Name});
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(448, 125);
+            this.dataGridView1.Size = new System.Drawing.Size(776, 125);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // CreateUser
-            // 
-            this.CreateUser.Location = new System.Drawing.Point(596, 119);
-            this.CreateUser.Name = "CreateUser";
-            this.CreateUser.Size = new System.Drawing.Size(99, 44);
-            this.CreateUser.TabIndex = 1;
-            this.CreateUser.Text = "CreateUser";
-            this.CreateUser.UseVisualStyleBackColor = true;
-            this.CreateUser.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // EditUser
-            // 
-            this.EditUser.Location = new System.Drawing.Point(596, 190);
-            this.EditUser.Name = "EditUser";
-            this.EditUser.Size = new System.Drawing.Size(99, 44);
-            this.EditUser.TabIndex = 2;
-            this.EditUser.Text = "EditUser";
-            this.EditUser.UseVisualStyleBackColor = true;
-            this.EditUser.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // DeleteUser
-            // 
-            this.DeleteUser.Location = new System.Drawing.Point(596, 266);
-            this.DeleteUser.Name = "DeleteUser";
-            this.DeleteUser.Size = new System.Drawing.Size(99, 42);
-            this.DeleteUser.TabIndex = 3;
-            this.DeleteUser.Text = "DeleteUser";
-            this.DeleteUser.UseVisualStyleBackColor = true;
-            this.DeleteUser.Click += new System.EventHandler(this.button3_Click);
             // 
             // Id
             // 
@@ -88,6 +64,54 @@
             // 
             this.Username.HeaderText = "Username";
             this.Username.Name = "Username";
+            // 
+            // Password
+            // 
+            this.Password.HeaderText = "Password";
+            this.Password.Name = "Password";
+            // 
+            // CreateUser
+            // 
+            this.CreateUser.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.CreateUser.Location = new System.Drawing.Point(610, 236);
+            this.CreateUser.Name = "CreateUser";
+            this.CreateUser.Size = new System.Drawing.Size(99, 44);
+            this.CreateUser.TabIndex = 1;
+            this.CreateUser.Text = "CreateUser";
+            this.CreateUser.UseVisualStyleBackColor = false;
+            this.CreateUser.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // EditUser
+            // 
+            this.EditUser.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.EditUser.Location = new System.Drawing.Point(610, 286);
+            this.EditUser.Name = "EditUser";
+            this.EditUser.Size = new System.Drawing.Size(99, 44);
+            this.EditUser.TabIndex = 2;
+            this.EditUser.Text = "EditUser";
+            this.EditUser.UseVisualStyleBackColor = false;
+            this.EditUser.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // DeleteUser
+            // 
+            this.DeleteUser.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.DeleteUser.Location = new System.Drawing.Point(610, 345);
+            this.DeleteUser.Name = "DeleteUser";
+            this.DeleteUser.Size = new System.Drawing.Size(99, 42);
+            this.DeleteUser.TabIndex = 3;
+            this.DeleteUser.Text = "DeleteUser";
+            this.DeleteUser.UseVisualStyleBackColor = false;
+            this.DeleteUser.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // First_Name
+            // 
+            this.First_Name.HeaderText = "First_Name";
+            this.First_Name.Name = "First_Name";
+            // 
+            // Last_Name
+            // 
+            this.Last_Name.HeaderText = "Last_Name";
+            this.Last_Name.Name = "Last_Name";
             // 
             // UsersManagementForm
             // 
@@ -114,5 +138,8 @@
         private System.Windows.Forms.Button DeleteUser;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Username;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Password;
+        private System.Windows.Forms.DataGridViewTextBoxColumn First_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Last_Name;
     }
 }

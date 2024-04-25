@@ -39,7 +39,7 @@ namespace ToDoApp.View
 
             foreach (User user in users)
             {
-                dataGridView1.Rows.Add(user.Id, user.Username);
+                dataGridView1.Rows.Add(user.Id, user.Username, user.Password, user.First_Name, user.Last_Name);
             }
         }
 
@@ -48,13 +48,16 @@ namespace ToDoApp.View
             CreateUserForm createUserForm = new CreateUserForm(userController);
             if (createUserForm.ShowDialog() == DialogResult.OK)
             {
-                LoadUsers(); // Reload users data into DataGridView
+
+                LoadUsers(); 
+                LoadUsers();
+
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Check if a user is selected in the DataGridView
+
             if (dataGridView1.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Please select a user to edit.");
@@ -64,7 +67,7 @@ namespace ToDoApp.View
          
             int userId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value);
 
-            // Open a form or dialog to edit the selected user
+
             EditUserForm editUserForm = new EditUserForm(userController, userId);
             if (editUserForm.ShowDialog() == DialogResult.OK)
             {
@@ -80,21 +83,33 @@ namespace ToDoApp.View
                 return;
             }
 
-            // Get the selected user ID
+
+            
             int userId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value);
 
-            // Confirm deletion with the user
+
+           
+
+           
+
             DialogResult result = MessageBox.Show("Are you sure you want to delete this user?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
-                // Call the DeleteUser method
+
                 userController.DeleteUser(userId);
 
-                // Display success message
-                MessageBox.Show("User deleted successfully.");
+                
+                MessageBox.Show("User is deleted successfully.");
 
-                // Reload users data into DataGridView
+                
+
+                
+                userController.DeleteUser(userId);
+
+                MessageBox.Show("User is deleted successfully.");
+
+
                 LoadUsers();
             }
         }

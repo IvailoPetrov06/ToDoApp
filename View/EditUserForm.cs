@@ -37,7 +37,6 @@ namespace ToDoApp.View
         {
             
             string username = textBox1.Text;
-         
             string password = textBox2.Text;
             string firstName = textBox3.Text;
             string lastName = textBox4.Text;
@@ -58,7 +57,10 @@ namespace ToDoApp.View
             if (user != null)
             {
                 textBox1.Text = user.Username;
-               
+                textBox2.Text = user.Password;
+                textBox3.Text = user.First_Name;
+                textBox4.Text = user.Last_Name;
+
             }
             else
             {
@@ -83,6 +85,26 @@ namespace ToDoApp.View
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

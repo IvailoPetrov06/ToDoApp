@@ -48,14 +48,16 @@ namespace ToDoApp.Controller
                 Id = newUserId,
                 Username = username,
                 Password = password,
-               
+                First_Name = firstName,
+                Last_Name = lastName,
+
             };
 
             users.Add(newUser);
         }
 
       
-        public void UpdateUser(int userId, string username, string password, string firstName, string lastName)
+        public void UpdateUser(int userId, string username, string password, string firstname, string lastName)
         {
          
             User userToUpdate = users.Find(u => u.Id == userId);
@@ -64,7 +66,9 @@ namespace ToDoApp.Controller
                 
                 userToUpdate.Username = username;
                 userToUpdate.Password = password;
-                
+                userToUpdate.First_Name = firstname;
+                userToUpdate.Last_Name = lastName;
+
             }
         }
 
