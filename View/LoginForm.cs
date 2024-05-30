@@ -117,5 +117,10 @@ namespace ToDoApp
             SignUp signup = new SignUp();
             signup.ShowDialog();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
