@@ -32,16 +32,17 @@
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.First_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Last_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CreateUser = new System.Windows.Forms.Button();
             this.EditUser = new System.Windows.Forms.Button();
             this.DeleteUser = new System.Windows.Forms.Button();
-            this.First_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Last_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -70,39 +71,6 @@
             this.Password.HeaderText = "Password";
             this.Password.Name = "Password";
             // 
-            // CreateUser
-            // 
-            this.CreateUser.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.CreateUser.Location = new System.Drawing.Point(610, 236);
-            this.CreateUser.Name = "CreateUser";
-            this.CreateUser.Size = new System.Drawing.Size(99, 44);
-            this.CreateUser.TabIndex = 1;
-            this.CreateUser.Text = "CreateUser";
-            this.CreateUser.UseVisualStyleBackColor = false;
-            this.CreateUser.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // EditUser
-            // 
-            this.EditUser.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.EditUser.Location = new System.Drawing.Point(610, 286);
-            this.EditUser.Name = "EditUser";
-            this.EditUser.Size = new System.Drawing.Size(99, 44);
-            this.EditUser.TabIndex = 2;
-            this.EditUser.Text = "EditUser";
-            this.EditUser.UseVisualStyleBackColor = false;
-            this.EditUser.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // DeleteUser
-            // 
-            this.DeleteUser.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.DeleteUser.Location = new System.Drawing.Point(610, 345);
-            this.DeleteUser.Name = "DeleteUser";
-            this.DeleteUser.Size = new System.Drawing.Size(99, 42);
-            this.DeleteUser.TabIndex = 3;
-            this.DeleteUser.Text = "DeleteUser";
-            this.DeleteUser.UseVisualStyleBackColor = false;
-            this.DeleteUser.Click += new System.EventHandler(this.button3_Click);
-            // 
             // First_Name
             // 
             this.First_Name.HeaderText = "First_Name";
@@ -112,6 +80,42 @@
             // 
             this.Last_Name.HeaderText = "Last_Name";
             this.Last_Name.Name = "Last_Name";
+            // 
+            // CreateUser
+            // 
+            this.CreateUser.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.CreateUser.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.CreateUser.Location = new System.Drawing.Point(185, 151);
+            this.CreateUser.Name = "CreateUser";
+            this.CreateUser.Size = new System.Drawing.Size(99, 44);
+            this.CreateUser.TabIndex = 1;
+            this.CreateUser.Text = "CreateUser";
+            this.CreateUser.UseVisualStyleBackColor = false;
+            this.CreateUser.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // EditUser
+            // 
+            this.EditUser.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.EditUser.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.EditUser.Location = new System.Drawing.Point(333, 150);
+            this.EditUser.Name = "EditUser";
+            this.EditUser.Size = new System.Drawing.Size(99, 44);
+            this.EditUser.TabIndex = 2;
+            this.EditUser.Text = "EditUser";
+            this.EditUser.UseVisualStyleBackColor = false;
+            this.EditUser.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // DeleteUser
+            // 
+            this.DeleteUser.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.DeleteUser.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.DeleteUser.Location = new System.Drawing.Point(495, 152);
+            this.DeleteUser.Name = "DeleteUser";
+            this.DeleteUser.Size = new System.Drawing.Size(99, 42);
+            this.DeleteUser.TabIndex = 3;
+            this.DeleteUser.Text = "DeleteUser";
+            this.DeleteUser.UseVisualStyleBackColor = false;
+            this.DeleteUser.Click += new System.EventHandler(this.button3_Click);
             // 
             // UsersManagementForm
             // 
