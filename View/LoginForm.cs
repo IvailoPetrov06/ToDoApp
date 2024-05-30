@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.Xml;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -104,6 +105,17 @@ namespace ToDoApp
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            SignUp signup = new SignUp();
+            signup.ShowDialog();
         }
     }
 }

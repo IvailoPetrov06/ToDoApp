@@ -71,6 +71,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\UserController.cs" />
+    <Compile Include="View\SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\CreateUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\UsersManagementForm.resx">
       <DependentUpon>UsersManagementForm.cs</DependentUpon>
     </EmbeddedResource>
