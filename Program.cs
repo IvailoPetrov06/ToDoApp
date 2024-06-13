@@ -11,9 +11,8 @@ namespace ToDoApp
     {
         /// <summary>
         /// The main entry point for the application.
-        /// 
+        /// d
         /// </summary>
-       ///ss
         [STAThread]
         static void Main()
         {
