@@ -114,8 +114,8 @@ namespace ToDoApp
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            SignUp signup = new SignUp();
-            signup.ShowDialog();
+            SignUp signUpForm = new SignUp(userController);
+            signUpForm.ShowDialog();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

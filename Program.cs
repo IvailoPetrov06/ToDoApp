@@ -11,17 +11,13 @@ namespace ToDoApp
     {
         /// <summary>
         /// The main entry point for the application.
-        /// d
         /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
             UserController userController = new UserController();
-
-       
             LoginForm loginForm = new LoginForm(userController);
             Application.Run(loginForm);
         }
